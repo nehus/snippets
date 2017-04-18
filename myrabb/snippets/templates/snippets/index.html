@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form name = "myForm" action="{% url 'snippets:index' %}" method="post" > {% csrf_token %}
+First name: <input type="text" name="name" ><br>
+Description: <input type="text" name="discription" ><br>
+<input type="submit" value="Submit">
+</form>
+
+
+
+</body>
+</html>
+
+
